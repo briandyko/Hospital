@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Hospital
 {
-    class Nurse : Hospital_Employee
+    class Receptionist : Hospital_Employee
     {
-        protected int numberofPatients;
+        private bool onPhone;
 
 
-        public Nurse(string employeeName, int employeeNumber, string department, int numberofPatients)
+        public Receptionist(string employeeName, int employeeNumber, string department, bool onPhone)
         {
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
             this.department = department;
-            this.numberofPatients = numberofPatients;
+            this.onPhone = onPhone;
         }
 
         public override string GetInfo()
         {
-            return base.GetInfo() + " " + department + " " + numberofPatients;
+            return base.GetInfo() + " " + employeeName + " " + department + " " + onPhone; 
         }
     }
 }

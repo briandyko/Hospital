@@ -10,6 +10,10 @@ namespace Hospital
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("High St. Hospital Employees \n");
+
+            Doctor doctor1 = new Doctor("Dr Gomez", 7832, "Pediatrics");
+            Console.WriteLine(doctor1.GetInfo());
         }
     }
 }

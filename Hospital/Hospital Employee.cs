@@ -10,13 +10,27 @@ namespace Hospital
     {
         protected string employeeName;
         protected string specialtyArea;
-        protected bool isOperating;
-        protected bool onPhone;
-        protected int numberofPatients;
         protected int employeeNumber;
+        protected string department;
 
 
+        public string EmployeeName { get; set; }
 
+
+        public Hospital_Employee()
+        {
+        }
+
+        public Hospital_Employee(string employeeName, int employeeNumber)
+        {
+            this.employeeName = employeeName;
+            this.employeeNumber = employeeNumber;
+        }
+
+        public virtual string GetInfo()
+        {
+            return employeeName + " " + employeeNumber;
+        }
 
     }
 }
