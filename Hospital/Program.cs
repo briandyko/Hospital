@@ -14,6 +14,17 @@ namespace Hospital
 
             Doctor doctor1 = new Doctor("Dr Gomez", 7832, "Pediatrics");
             Console.WriteLine(doctor1.GetInfo());
+
+            Surgeon surgeon1 = new Surgeon("Dr Dyko", 8274, "Liver", true);
+            Console.WriteLine(surgeon1.GetInfo());
+
+            Nurse nurse1 = new Nurse("Nurse Brown", 9901, "ICU", 6);
+            Console.WriteLine(nurse1.GetInfo());
+
+            Receptionist receptionist1 = new Receptionist("Ms. Nelson", 4421, "ER", true);
+            Console.WriteLine(receptionist1.GetInfo());
+
+
         }
     }
 }

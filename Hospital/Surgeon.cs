@@ -19,5 +19,10 @@ namespace Hospital
             this.isOperating = isOperating;
         }
 
+        public override string GetInfo()
+        {
+            return base.GetInfo() + " " + "operating" + " " + isOperating;
+        }
+
     }
 }

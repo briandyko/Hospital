@@ -21,7 +21,7 @@ namespace Hospital
 
         public override string GetInfo()
         {
-            return base.GetInfo() + " " + employeeName + " " + department + " " + onPhone; 
+            return base.GetInfo() + " " + employeeName + " " + department + " " + "on phone" + " " + onPhone; 
         }
     }
 }
