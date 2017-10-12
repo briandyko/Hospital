@@ -13,8 +13,9 @@ namespace Hospital
         protected int employeeNumber;
         protected string department;
 
-
-        public string EmployeeName { get; set; }
+        protected float paidAmount;
+        protected float hoursWorked;
+        protected float salary;
 
 
         public Hospital_Employee()
@@ -25,11 +26,18 @@ namespace Hospital
         {
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
+            this.hoursWorked = 40.0f;
         }
 
         public virtual string GetInfo()
         {
             return employeeName + " " + employeeNumber;
+        }
+
+        public virtual float GetPaid()
+        {
+            paidAmount = hoursWorked * salary;
+            return paidAmount;
         }
 
     }
