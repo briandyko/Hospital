@@ -17,11 +17,18 @@ namespace Hospital
             this.employeeNumber = employeeNumber;
             this.department = department;
             this.onPhone = onPhone;
+            this.hoursWorked = 22f;
         }
 
         public override string GetInfo()
         {
             return base.GetInfo() + " " + employeeName + " " + department + " " + "on phone" + " " + onPhone; 
+        }
+
+        public override float GetPaid()
+        {
+            //hoursWorked = 22f;
+            return base.GetPaid();
         }
     }
 }

@@ -18,16 +18,24 @@ namespace Hospital
         protected float salary;
 
 
+        public string EmployeeName { get; set; }
+        public float PaidAmount { get; set; }
+        public float HoursWorked { get; set; }
+        public float Salary { get; set; }
+
+
         public Hospital_Employee()
         {
+            this.hoursWorked = 40f;
+            this.salary = 800f;
         }
 
-        public Hospital_Employee(string employeeName, int employeeNumber)
-        {
-            this.employeeName = employeeName;
-            this.employeeNumber = employeeNumber;
-            this.hoursWorked = 40.0f;
-        }
+        //public Hospital_Employee(string employeeName, int employeeNumber)
+        //{
+        //    this.employeeName = employeeName;
+        //    this.employeeNumber = employeeNumber;
+
+            //}
 
         public virtual string GetInfo()
         {
@@ -36,9 +44,13 @@ namespace Hospital
 
         public virtual float GetPaid()
         {
+            //this.hoursWorked = 2f;
+            //this.salary = 2f;
             paidAmount = hoursWorked * salary;
             return paidAmount;
         }
+
+
 
     }
 }

@@ -17,6 +17,8 @@ namespace Hospital
             this.employeeNumber = employeeNumber;
             this.specialtyArea = specialtyArea;
             this.isOperating = isOperating;
+            this.salary = 18000f;
+            this.hoursWorked = 80f;
         }
 
         public override string GetInfo()
@@ -24,5 +26,11 @@ namespace Hospital
             return base.GetInfo() + " " + "operating" + " " + isOperating;
         }
 
+        public override float GetPaid()
+        {
+            return base.GetPaid();
+        }
+
     }
+
 }

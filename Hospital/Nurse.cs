@@ -23,5 +23,10 @@ namespace Hospital
         {
             return base.GetInfo() + " " + department + " " + numberofPatients + " patients";
         }
+
+        public override float GetPaid()
+        {
+            return base.GetPaid();
+        }
     }
 }
